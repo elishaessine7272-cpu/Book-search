@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #172033;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+  }
+  
+  .search-box {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+  
+  .search-box h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .search-box p {
+    color: #667085;
+    margin-bottom: 25px;
+  }
+  
+  .search-area {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .search-area input {
+    flex: 1;
+    min-width: 250px;
+    padding: 14px 16px;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-area input:focus {
+    border-color: #2563eb;
+  }
+  
+  .search-area button {
+    border: none;
+    padding: 14px 22px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  
+  
+  .search-area .clear-btn {
+    background: #667085;
+  }
+  
+  
+  #message {
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  .results {
+    margin-top: 30px;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  
+  .book-cover {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: #eef2f6;
+  }
+  
+  .book-info {
+    padding: 20px;
+  }
+  
+  .book-info h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  
+  .book-info p {
+    color: #667085;
+    margin-bottom: 8px;
+  }
+  
+  .book-info strong {
+    color: #172033;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      width: 94%;
+      margin: 30px auto;
+    }
+  
+    .search-box {
+      padding: 25px 18px;
+    }
+  
+    .search-box h1 {
+      font-size: 28px;
+    }
+  
+    .search-area {
+      flex-direction: column;
+    }
+  
+    .search-area input,
+    .search-area button {
+      width: 100%;
+    }
+  }

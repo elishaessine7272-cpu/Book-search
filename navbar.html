@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book Search</title>
+
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+  <main class="container">
+
+    <section class="search-box">
+      <h1>Book Search</h1>
+      <p>Search for books using the Open Library API.</p>
+
+      <div class="search-area">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter a book name..."
+        >
+
+        <button id="searchBtn">Search</button>
+
+        <button id="clearBtn" class="clear-btn">Clear</button>
+      </div>
+
+      <p id="message"></p>
+    </section>
+
+    <section id="results" class="results"></section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
